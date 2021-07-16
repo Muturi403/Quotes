@@ -1,1 +1,5 @@
-<p>quote works!</p>
+<div class="container">
+	<div *ngFor='let quote of quotes let i=index'>
+		<p>{{quote.phrase}}</p>
+	</div>
+</div>
