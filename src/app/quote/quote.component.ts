@@ -15,6 +15,15 @@ export class QuoteComponent implements OnInit {
     new Quote('Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.', 'Faith Muturi', 'Rumi', new Date(2021, 6, 16), 0, 0),
     new Quote('You can not stop the future You can not rewind the past.The only way to learn the secret is to press play.', 'Faith Muturi', 'Jay Asher', new Date(2021, 6, 16), 0, 0)
   ] 
+
+  deleteQuote(isRead,index){
+    if (isRead){
+      let toDelete= confirm(`Are you sure to delete`)
+      if (toDelete){
+        this.quotes.splice(index,1)
+      }
+    }
+  }
   constructor() { }
 
   ngOnInit(): void {
