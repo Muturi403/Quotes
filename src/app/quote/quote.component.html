@@ -3,15 +3,8 @@
     <div class="col-md-8">
       <div *ngFor='let quote of quotes let i=index'>
         <p>{{quote.phrase}}</p>
-		  <div>
-		    <p>Posted by: {{quote.name}}</p>
-		    <p>Author: {{quote.author}}</p>
-		    <p>Date Posted: {{quote.publishDate}}</p>
-		    <p>{{quote.upVote}}</p>
-		    <button>Upvote</button>
-		    <p>Downvote: {{quote.downVote}}</p>
-		    <button>Downvote</button>
-		  </div>
+        <app-quote-details *ngIf='quote' bind-quote='quote' (isRead)='quoteDelete($event,i)'>
+        </app-quote-details>
 
       </div>
     </div>
