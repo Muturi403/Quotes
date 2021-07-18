@@ -4,7 +4,7 @@
   <p>Author: {{quote.author}}</p>
   <p>Date Posted: {{quote.publishDate}}</p>
   <p>{{quote.upVote}}</p>
-  <button>Upvote</button>
+  <button (click)='upvote()'>Upvote</button>
   <p>{{quote.downVote}}</p>
-  <button>Downvote</button>
+  <button (click)='downvote()'>Downvote</button>
 </div>
