@@ -1,0 +1,8 @@
+ .Quote {
+   float: left;
+   margin: 2rem 0 0 2rem;
+   padding: 0.5rem;
+   background-color: yellow;
+   width: 25rem;
+   height: 22rem;
+ }
