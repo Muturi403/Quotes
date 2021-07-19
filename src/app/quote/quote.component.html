@@ -3,13 +3,12 @@
     <div class="col-md-8">
       <div *ngFor='let quote of quotes let i=index'>
         <p>{{quote.phrase}}</p>
-        <app-quote-details *ngIf='quote' bind-quote='quote' (isRead)='quoteDelete($event,i)'>
-        </app-quote-details>
+        <app-quote-details *ngIf='quote' bind-quote='quote' (isRead)='quoteDelete($event,i)'></app-quote-details>
 
       </div>
     </div>
     <div class="col-md-4">
-      <h2>form</h2>
+      <app-quote-form (addQuote)='addedQuote($event)'></app-quote-form>
     </div>
   </div>
 
