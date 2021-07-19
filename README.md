@@ -9,7 +9,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:40193/`. The app 
 
 ## Setup/Installation Requirements
 
-git clone https://github.com/Muturi403/Quotes.git
+git clone <https://github.com/Muturi403/Quotes.git>
 cd Quotes
 code . or atom .
 ng serve --open
@@ -23,8 +23,8 @@ Angular
 Bootstrap
 
 ## Known Bugs
-The buttons functionality do not work as proposed but changes are to be done.
 
+The buttons functionality do not work as proposed but changes are to be done.
 
 ## Contact
 
@@ -32,4 +32,4 @@ Email: faith.muturi@student.moringaschool.com
 
 ## License
 
-MIT copyright (c) 2021 
+MIT copyright (c) 2021
