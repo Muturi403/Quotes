@@ -1,2 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+
+ body {
+   background-image: url(./assets/Quotesimg.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+	 background-attachment: fixed;
+	 background-position: center center;
+ }
