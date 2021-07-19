@@ -1,0 +1,47 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: solid #C8A684 3px;
+  padding-top: 50px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 50px;
+  border-radius: 20px;
+}
+
+input {
+  border-color: #C8A684;
+  border-radius: 20px;
+  height: 55px;
+  color: #C8A684;
+}
+
+textarea {
+  border-color: #C8A684;
+  border-radius: 20px;
+  color: #C8A684;
+}
+
+input::placeholder {
+  color: #C8A684;
+}
+
+textarea::placeholder {
+  color: #C8A684;
+}
+
+.btn {
+  height: 55px;
+  border-radius: 20px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: purple;
+}
+
+.alert {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
