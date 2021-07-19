@@ -1,10 +1,20 @@
-.btn-warning,.btn-danger {
-  margin-left: 1rem;
-  border-radius: 1px;
+#dislike {
+	border-radius: 1px;
+	border: 2px solid white;
+	margin-left: 90px;
+	margin-top: -139px;
 }
 
-.btn-success {
+#like {
   border-radius: 1px;
+	border: 2px solid white;
+}
+
+#delete{
+	border-radius: 1px;
+	border: 2px solid white;
+	margin-left: 200px;
+	margin-top: -240px;
 }
 
 p{
