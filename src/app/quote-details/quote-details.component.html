@@ -4,10 +4,10 @@
   <p>Date Posted: {{quote.publishDate}}</p>
   <p>{{quote.upVote}}</p>
   <button (click)='upvote()'class="btn btn-sm btn-success" id="like">Like<i class="fa fa-thumbs-up" id="like"></i></button>
-  <p>{{quote.downVote}}</p>
+  <p>{{quote.downVote}}</p> 
   <button (click)='downvote()' class="btn btn-sm btn-danger" id="dislike">Dislike<i class="fa fa-thumbs-down"></i></button>
 </div>
-<Br>
+<br>
 <div class="delete">
 	<button class="btn btn-danger" (click)='deleteQuote(true)' id="delete">Delete</button>
 </div>
