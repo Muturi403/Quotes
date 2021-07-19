@@ -48,4 +48,5 @@ textarea::placeholder {
 
 .heading, .description, .name{
 	color: white;
+	font-size: 30px;
 }
