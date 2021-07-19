@@ -14,7 +14,25 @@ export class QuoteComponent implements OnInit {
     new Quote('It is only after you’ve stepped outside your comfort zone that you begin to change, grow, and transform.', 'Faith Muturi', 'Roy T. Bennett', new Date(2021, 6, 16), 0, 0),
     new Quote('Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.', 'Faith Muturi', 'Rumi', new Date(2021, 6, 16), 0, 0),
     new Quote('You can not stop the future You can not rewind the past.The only way to learn the secret is to press play.', 'Faith Muturi', 'Jay Asher', new Date(2021, 6, 16), 0, 0)
-  ] 
+  ]; 
+  get sortQuotes() {
+    return this.quotes.sort((a, b) => {
+      return <any>new Date(b.publishDate) - <any>new Date(a.publishDate);
+    });
+  }
+  currentValue: number;
+  newValue: number;
+  counter: number;
+  highestUpvote() {
+    this.currentValue = 0
+    this.newValue = 0
+
+    for (this.counter = 0; this.counter < this.quotes.length; this.counter++) {
+      this.newValue = this.quotes[this.counter].upVote;
+      if (this.newValue > this.currentValue) { this.currentValue = this.newValue }
+    }
+    return this.currentValue
+  }
   addedQuote(quote) {
     let arraysize = this.quotes.length;
     quote.id = arraysize + 1;
