@@ -1,2 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css"
+/* 
+body {
+  font-family: 'Itim', cursive;
+  color: rgba(58, 68, 39, 1);
+  background-color: rgba(246, 246, 246, 1);
+} */
