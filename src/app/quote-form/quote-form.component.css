@@ -11,14 +11,14 @@ form {
 }
 
 input {
-  border-color: midnightblue;
+  border-color: white;
   border-radius: 20px;
   height: 55px;
   color: blueviolet;
 }
 
 textarea {
-  border-color: midnightblue;
+  border-color: white;
   border-radius: 20px;
   color: blueviolet;
 }
@@ -44,4 +44,8 @@ textarea::placeholder {
   height: 40px;
   display: flex;
   align-items: center;
+}
+
+.heading, .description, .name{
+	color: white;
 }
