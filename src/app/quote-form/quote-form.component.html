@@ -16,8 +16,7 @@
     </div>
     <div class="form-group">
       <label for="description">Quote</label>
-      <textarea class="form-control" placeholder="Type quote here..." id="quote" rows="2" required
-        [(ngModel)]="newQuote.phrase" name="newQuote.phrase" #quote="ngModel"></textarea>
+      <textarea class="form-control" placeholder="Type quote here..." id="quote" rows="2" required [(ngModel)]="newQuote.phrase" name="newQuote.phrase" #quote="ngModel"></textarea>
       <div *ngIf="quote.invalid && quote.dirty" class="alert alert-danger">
         <div *ngIf="quote.errors.required">
           Quote can not be empty.
@@ -26,8 +25,7 @@
     </div>
     <div class="form-group">
       <label for="name">Author</label>
-      <input type="text" placeholder="Enter Quote author here..." required class="form-control" id="author"
-        [(ngModel)]="newQuote.author" name="newQuote.author" #author="ngModel">
+      <input type="text" placeholder="Enter Quote author here..." required class="form-control" id="author" [(ngModel)]="newQuote.author" name="newQuote.author" #author="ngModel">
       <div *ngIf="author.invalid && author.dirty" class="alert alert-danger">
         <div *ngIf="author.errors.required">
           Author Name is required.
